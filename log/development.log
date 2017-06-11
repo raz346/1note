@@ -4897,3 +4897,4 @@ request.variant: []:
   railties (5.0.1) lib/rails/commands.rb:18:in `<top (required)>'
   bin/rails:4:in `<main>'
 
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/Ahmed/lighthouse/final_project/config/environment.rb:5)
