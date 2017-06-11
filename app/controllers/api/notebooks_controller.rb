@@ -11,15 +11,7 @@ class Api::NotebooksController < ApplicationController
     end
   end
 
-  def destroy
-    @notebook = Notebook.find(params[:id])
-    unless lastNotebook? || @notebook.author_id != current_user.id
-      @notebook.destroy!
-      render :show
-    else
-      render json: {}, status: 403
-    end
-  end
+
 
   def index
     @notebooks = current_user.notebooks
