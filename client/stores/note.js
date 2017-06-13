@@ -48,10 +48,7 @@ NoteStore.__onDispatch = function (payload) {
             setCurrentNote(payload.note);
             NoteStore.__emitChange();
             break;
-        case NoteConstants.REMOVE_NOTE:
-            deleteNote(payload.note);
-            NoteStore.__emitChange();
-            break;
+      
     }
 };
 
