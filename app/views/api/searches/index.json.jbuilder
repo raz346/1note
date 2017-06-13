@@ -11,6 +11,12 @@ json.search_results do
   json.array! author_pubs do |author_pub|
     case author_pub
     when Notebook
+      json.partial! "api/notebooks/notebook", notebook: author_pub
 
+    when Note
+      json.partial! "api/notes/note", note: author_pub
+    end
+
+    json._type author_pub.class.to_s
   end
 end
