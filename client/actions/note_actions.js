@@ -8,12 +8,7 @@ var NoteActions = {
             notes: notes
         });
     },
-    receiveCurrentNote: function(note) {
-        AppDispatcher.dispatch({
-            actionType: NoteConstants.RECEIVE_CURRENT_NOTE,
-            note: note
-        });
-    },
+
     removeNote: function(note) {
         AppDispatcher.dispatch({
             actionType: NoteConstants.REMOVE_NOTE,
