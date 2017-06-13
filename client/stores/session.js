@@ -10,9 +10,7 @@ SessionStore.currentUser = function() {
     return _currentUser;
 };
 
-SessionStore.isLoggedIn = function() {
-    return Boolean(_currentUser);
-};
+
 
 SessionStore.currentUserHasBeenFetched = function() {
     return _currentUserHasBeenFetched;
