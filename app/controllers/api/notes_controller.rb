@@ -1,15 +1,7 @@
 class Api::NotesController < ApplicationController
   before_action :require_signed_in
 
-  def create
-    @note = Note.new(note_params)
-    @note.author_id = current_user.id
-    if @note.save
-      render :show
-    else
-      render json: @note.errors.full_messages, status: 422
-    end
-  end
+
 
   def destroy
     @note = Note.find(params[:id])
