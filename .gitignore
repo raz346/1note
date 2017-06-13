@@ -6,7 +6,7 @@
 !/log/.keep
 /tmp
 
-# Ignore frontend files
+# Ignore client files
 node_modules
 app/assets/javascripts/bundle.js*
 
