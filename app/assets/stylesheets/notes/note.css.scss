@@ -1,0 +1,237 @@
+/* NOTE EDITOR */
+
+.note-form-container {
+  width: 700px;
+  max-height: 600px;
+  padding: 20px;
+  overflow-y: auto;
+  background: #fff
+}
+
+.note-form {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.note-form-title {
+  display: block;
+  background: #fff;
+  padding: 10px;
+  color: #2dbe60;
+  font-weight: 300;
+  font-size: 28px;
+  height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 95%;
+  margin-top: 5px;
+}
+
+.note-editor-notebooks-label {
+  height: 16px;
+  width: 18px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  background-image: url(image-path('1noteIcons/tinyNotebook.png'));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.toolbar {
+  background: #fff;
+  text-align: center;
+  border-bottom: 2px solid #ececec;
+}
+
+/* NOTE INDEX */
+
+.note-view {
+  float: left;
+  margin-left: 89px;
+  width: 349px;
+  background: #FBFBFB;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-right: 1px solid #ECECEC;
+  overflow-y: auto;
+}
+
+.notes-header-title {
+  text-align: left;
+  font-size: 21px;
+  color: #878787;
+  text-transform: uppercase;
+  padding: 24px 20px 0 24px;
+  letter-spacing: 0.5px;
+  vertical-align: top;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 26px;
+}
+.notes-header {
+  height: 24px;
+  border-bottom: 1px solid #ECECEC;
+  position: relative;
+  padding: 0 24px;
+  margin-top: 32px;
+  display: block;
+}
+
+.notes-count {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ababab;
+}
+
+.note-scroll-window {
+  background: #fff;
+
+}
+
+.note-index-item-container {
+
+}
+
+/* NOTE INDEX ITEMS */
+
+.note-index-item-snippet {
+  overflow: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #ECECEC;
+  position: relative;
+  cursor: pointer;
+}
+.note-index-item-snippet:hover {
+  background: rgba(43,181,92, .9);
+}
+
+.active-note {
+  border: 3px solid #d9d9d9;
+}
+
+.active-note .note-index-item-delete {
+  right: 8px;
+}
+.active-note .note-index-item-delete:hover {
+  right: 8px;
+}
+
+.note-index-item-title {
+  font-weight: 400;
+  color: #4a4a4a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 20px 20px 5px 20px;
+  margin: 0 35px 0 0;
+  font-size: 21px;
+  overflow-wrap: break-word;
+  line-height: 20px;
+}
+.note-last-update {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  padding-left: 20px;
+}
+
+
+.note-index-item-snippet:hover .note-last-update {
+  color: #fff;
+}
+
+
+.note-index-item-snippet:hover .note-index-item-title {
+  color: #fff;
+}
+
+.note-index {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.note-title {
+  color: #4a4a4a;
+}
+
+.note-index-item-delete {
+  background-image: url(image-path('1noteIcons/UnSelectedTrashIcon.png'));
+  background-position: center;
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  padding: 3px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.note-index-item-delete:hover {
+  background-image: url(image-path('1noteIcons/TrashCanSelected.png'));
+}
+
+
+
+
+/* FORM */
+
+.note-form-submit {
+  text-align: center;
+  color: #fff;
+  background: #2dbe60;
+  border: 1px solid #2dbe60;
+  font-size: 13px;
+  font-weight: 500;
+  width: 180px;
+  margin: 0 4px;
+  padding: 9px 14px;
+  border-radius: 5px;
+}
+
+.note-form-submit:hover {
+  background: #28a955;
+  border: 1px solid #28a955;
+}
+.note-form-cancel {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  background: #ececec;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  width: 180px;
+  margin: 0 4px;
+  padding: 9px 14px;
+}
+
+.note-form-cancel:hover {
+  background: #d9d9d9;
+  border: 1px solid #d1d1d1;
+}
+
+
+.note-form-body {
+  height: 500px;
+  padding: 20px;
+  border: 3px solid #4a4a4a;
+  background: #eee;
+}

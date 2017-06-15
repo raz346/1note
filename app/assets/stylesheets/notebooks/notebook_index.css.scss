@@ -1,0 +1,148 @@
+/* NOTEBOOK VIEW HEADER */
+
+.notebook-view-header-container {
+  width: 100%;
+  width: 100%;
+  color: #878787;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  font-size: 26px;
+  font-weight: 300;
+  display: block;
+  padding: 21px 24px 32px;
+  vertical-align: baseline;
+}
+
+.notebook-view-title {
+
+}
+
+.notebook-view-add-notebook {
+  background-image: url(image-path('1noteIcons/addNotebook.png'));
+  background-position: center;
+  background-size: cover;
+  height: 31px;
+  width: 34px;
+  position: absolute;
+  top: 20px;
+  right: 17px;
+  cursor: pointer;
+  display: block;
+}
+
+.notebook-view-add-notebook:hover .notebook-view-add-notebook-text {
+  visibility: visible;
+  transition: visibility 0.2s 0.8s ease;
+}
+.notebook-view-add-notebook:hover .notebook-arrow-up {
+  visibility: visible;
+  transition: visibility 0.2s 0.8s ease;
+}
+
+.notebook-view-add-notebook-text {
+  transition: visibility .2s 0 ease;
+  white-space: nowrap;
+  padding: 6px 7px;
+  background: #606060;
+  color: #d9d9d9;
+  border-radius: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 12px;
+  font-weight: 500;
+  position: fixed;
+  visibility: hidden;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  top: 54px;
+  right: -32px;
+}
+.notebook-arrow-up {
+  transition: visibility .2s 0 ease;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #606060;
+  visibility: hidden;
+  position: absolute;
+  top: 29px;
+  left: 8px;
+}
+
+
+
+/* NOTEBOOK INDEX */
+
+.notebook-view {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 428px;
+  border-right: 3px solid #888;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #fff;
+
+}
+
+.notebook-index-item-scoll-window {
+  border-bottom: 1px solid #888;
+  border-top: 1px solid #888;
+}
+
+/* NOTEBOOK INDEX ITEM  */
+
+.notebook-index-item {
+  height: 40px;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #888;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.notebook-index-item:hover {
+  background-color: #3FBC6C;
+}
+.notebook-index-item:hover .notebook-index-item-title {
+  color: #fff;
+}
+.notebook-index-item:hover .notebook-index-item-notecount {
+  color: #fff;
+}
+
+.notebook-index-item-title {
+  color: #4a4a4a;
+  font-size: 20px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 1.5px
+
+}
+
+.notebook-index-item-notecount {
+  color: #878787;
+  padding-top: 5px;
+}
+
+.notebook-index-item-delete {
+  background-image: url(image-path('1noteIcons/UnSelectedTrashIcon.png'));
+  background-position: center;
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  padding: 3px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 26px;
+  right: 66px;
+}
+.notebook-index-item-delete:hover {
+  background-image: url(image-path('1noteIcons/TrashCanSelected.png'));
+}
