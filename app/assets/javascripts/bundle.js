@@ -46335,7 +46335,7 @@
 	          '1note'
 	        )
 	      ),
-	      React.createElement('a', { href: '/auth/google', className: 'sign-up-google' }),
+	      
 	      React.createElement(
 	        'button',
 	        { className: 'sign-in-header-link',
@@ -46735,12 +46735,12 @@
 	      React.createElement(
 	        'h1',
 	        { className: 'sign-up-title' },
-	        'Remember Everything'
+	        
 	      ),
 	      React.createElement(
 	        'h3',
 	        { className: 'sign-up-subtitle' },
-	        'Modern life can be complicated. Simplify it with 1note, the app to manage it all.'
+	        
 	      ),
 	      React.createElement(
 	        'form',
@@ -46772,7 +46772,7 @@
 	        React.createElement(
 	          'button',
 	          { className: 'user-form-submit', disabled: submissionDisabled },
-	          'Sign up for free'
+	          'Sign up'
 	        ),
 	        React.createElement(
 	          'button',

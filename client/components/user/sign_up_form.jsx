@@ -125,10 +125,6 @@ var SignUpForm = React.createClass({
 
     return (
       <div className='user-form-container'>
-        <h1 className='sign-up-title'>Remember Everything</h1>
-        <h3 className='sign-up-subtitle'>
-        Modern life can be complicated. Simplify it with 1note,
-        the app to manage it all.</h3>
 
         <form onSubmit={this.handleSubmit} className='user-form'>
 
@@ -155,10 +151,12 @@ var SignUpForm = React.createClass({
 
             {passwordError}
           </label>
-
+          
           <button className='user-form-submit' disabled={submissionDisabled}>
-                  Sign up for free
+                  Sign up
           </button>
+          <button className='sign-in-header-link'
+                onClick={this.handleClick}>Sign In</button>
 
           <button className='user-form-submit' onClick={this._guestLogin}>
             Explore as Guest
