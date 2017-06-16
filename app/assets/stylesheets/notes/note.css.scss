@@ -37,7 +37,6 @@
   position: absolute;
   top: 10px;
   left: 10px;
-
   background-image: url(image-path('1noteIcons/tinyNotebook.png'));
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,11 +113,11 @@
   cursor: pointer;
 }
 .note-index-item-snippet:hover {
-  background: rgba(43,181,92, .9);
+  background: #42f4aa;
 }
 
 .active-note {
-  border: 3px solid #d9d9d9;
+  border: 3px solid #42f4aa;;
 }
 
 .active-note .note-index-item-delete {
@@ -173,7 +172,7 @@
 }
 
 .note-index-item-delete {
-  background-image: url(image-path('1noteIcons/UnSelectedTrashIcon.png'));
+   background-image: url(image-path('1noteIcons/TrashCanSelected.png'));
   background-position: center;
   background-size: cover;
   height: 25px;
@@ -185,9 +184,7 @@
   top: 15px;
   right: 10px;
 }
-.note-index-item-delete:hover {
-  background-image: url(image-path('1noteIcons/TrashCanSelected.png'));
-}
+
 
 
 

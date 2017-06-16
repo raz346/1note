@@ -48018,7 +48018,7 @@
 	        this.props.note.updated_at,
 	        ' ago'
 	      ),
-	      React.createElement('span', { className: 'note-index-item-delete',
+	      React.createElement('button', { className: 'note-index-item-delete',
 	        onClick: this._handleDeleteClick })
 	    );
 	  }
