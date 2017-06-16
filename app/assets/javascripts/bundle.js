@@ -46967,7 +46967,7 @@
 	        React.createElement(
 	          'ul',
 	          null,
-	          React.createElement('li', { className: 'small-logo' }),
+	          React.createElement('li', { className: 'small-logo' }, '1note'),
 	          React.createElement(
 	            'li',
 	            { className: 'navbar-link' },

@@ -119,7 +119,7 @@ var NavBar = React.createClass({
       <div className='navbar-container group'>
         <div className='navbar-main'>
           <ul>
-            <li className='small-logo'></li>
+            <li className='small-logo'><h2>1note</h2></li>
             <li className='navbar-link'>
               <div
                 className='icon-navbar-add-note'

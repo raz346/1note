@@ -6,8 +6,8 @@
   position: fixed;
   height: 100%;
   float: left;
-  width: 70px;
-  background: #F8F8F8;
+  width: 80px;
+  background: lightblue;
   padding: 9px;
   text-align: center;
   border-right: 1px solid #ECECEC;
@@ -174,12 +174,9 @@
 }
 
 .small-logo {
-  width: 60px;
-  height: 60px;
-  margin: -4px auto 40px auto;
-  background-image: url(image-path('logo.png'));
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-size: 2em;
+  border-bottom: 1px solid black;
+padding-bottom: 5px;
 }
 
 .nav-icon {
