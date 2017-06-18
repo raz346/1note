@@ -31,11 +31,9 @@ var NoteView = React.createClass({
     this._editor.setContents(JSON.parse(note.body_delta));
 
     if (noteChange || !cursor) {
-      // editor is working on a new note or mounting, move cursor to end
       var endOfNote = this._editor.getLength();
       this._editor.setSelection(endOfNote, endOfNote);
     } else {
-      // editor preserves cursor location through edit
       this._editor.setSelection(cursor.start, cursor.end);
     }
   },

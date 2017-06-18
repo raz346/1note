@@ -6,7 +6,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "./node_modules/.bin/webpack"
   },
-
   "keywords": [],
   "author": "",
   "dependencies": {
@@ -17,10 +16,11 @@
     "react": "^0.14.8",
     "react-addons-css-transition-group": "^0.14.8",
     "react-dom": "^0.14.8",
+    "react-image-preview": "^0.1.0",
     "react-modal": "^0.6.1",
     "react-quill": "^0.4.1",
     "react-router": "^2.0.1",
-    "webpack": "^1.12.14"
+    "webpack": "^2.6.1"
   },
   "engines": {
     "node": "5.7.0",
