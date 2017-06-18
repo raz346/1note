@@ -27530,12 +27530,7 @@
 	            notes: notes
 	        });
 	    },
-	    // receiveSingleNote: function(note) {
-	    //     AppDispatcher.dispatch({
-	    //         actionType: NoteConstants.RECEIVE_SINGLE_NOTE,
-	    //         note: note
-	    //     });
-	    // },
+	
 	    receiveCurrentNote: function (note) {
 	        AppDispatcher.dispatch({
 	            actionType: NoteConstants.RECEIVE_CURRENT_NOTE,
@@ -34481,10 +34476,6 @@
 	            setCurrentNotebook(payload.notebook);
 	            NotebookStore.__emitChange();
 	            break;
-	        // case NotebookConstants.CLEAR_CURRENT_NOTEBOOK:
-	        //     _currentNotebook = {id: null};
-	        //     NotebookStore.__emitChange();
-	        //     break;
 	        case NotebookConstants.CREATE_NOTEBOOK:
 	            resetNotebook(payload.notebook);
 	            setCurrentNotebook(payload.notebook);
@@ -46335,7 +46326,6 @@
 	          '1note'
 	        )
 	      ),
-	      
 	      React.createElement(
 	        'button',
 	        { className: 'sign-in-header-link',
@@ -46733,16 +46723,6 @@
 	      'div',
 	      { className: 'user-form-container' },
 	      React.createElement(
-	        'h1',
-	        { className: 'sign-up-title' },
-	        
-	      ),
-	      React.createElement(
-	        'h3',
-	        { className: 'sign-up-subtitle' },
-	        
-	      ),
-	      React.createElement(
 	        'form',
 	        { onSubmit: this.handleSubmit, className: 'user-form' },
 	        React.createElement(
@@ -46967,7 +46947,15 @@
 	        React.createElement(
 	          'ul',
 	          null,
-	          React.createElement('li', { className: 'small-logo' }, '1note'),
+	          React.createElement(
+	            'li',
+	            { className: 'small-logo' },
+	            React.createElement(
+	              'h2',
+	              null,
+	              '1note'
+	            )
+	          ),
 	          React.createElement(
 	            'li',
 	            { className: 'navbar-link' },
@@ -48018,7 +48006,7 @@
 	        this.props.note.updated_at,
 	        ' ago'
 	      ),
-	      React.createElement('button', { className: 'note-index-item-delete',
+	      React.createElement('span', { className: 'note-index-item-delete',
 	        onClick: this._handleDeleteClick })
 	    );
 	  }

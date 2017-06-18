@@ -18,7 +18,8 @@ var SignUpHeader = React.createClass({
           <h1 className='sign-up-header-title'>1note</h1>
         </Link>
         
-        
+        <button className='sign-in-header-link'
+                onClick={this.handleClick}>Sign In</button>
       </header>
     );
   }

@@ -155,8 +155,6 @@ var SignUpForm = React.createClass({
           <button className='user-form-submit' disabled={submissionDisabled}>
                   Sign up
           </button>
-          <button className='sign-in-header-link'
-                onClick={this.handleClick}>Sign In</button>
 
           <button className='user-form-submit' onClick={this._guestLogin}>
             Explore as Guest
