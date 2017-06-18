@@ -131,7 +131,7 @@
 }
 
 .notebook-index-item-delete {
-
+  background-image: url(image-path('1noteIcons/TrashCanSelected.png'));
   background-position: center;
   background-size: cover;
   height: 25px;
@@ -142,7 +142,4 @@
   position: absolute;
   top: 26px;
   right: 66px;
-}
-.notebook-index-item-delete:hover {
-  background-image: url(image-path('1noteIcons/TrashCanSelected.png'));
 }
