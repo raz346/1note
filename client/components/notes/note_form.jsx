@@ -1,4 +1,5 @@
 var React = require('react'),
+    DocumentMeta = require ('react-document-meta'),
     NotesApi = require('../../utils/notes_util'),
     NoteStore = require('../../stores/note'),
     NotebookStore = require('../../stores/notebook'),
@@ -52,8 +53,10 @@ var NoteForm = React.createClass({
         }
         return (
             <div className='note-form-container'>
+                
                 <NoteView notebooks={this.state.notebooks}
                           note={this.state.note} />
+                          
             </div>
         );
     }
