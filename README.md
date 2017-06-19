@@ -9,7 +9,7 @@ A simple note taking app using rails and react
 
 # run migrations rails db:migrate
 
-# run webpack -wc
+# run webpack -w
 
 # run the server rails s
 

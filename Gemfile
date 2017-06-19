@@ -16,6 +16,7 @@ gem 'aws-sdk', '>= 2.0'
 gem 'pg_search'
 gem 'kaminari'
 gem 'omniauth-google-oauth2'
+gem 'link_thumbnailer'
 gem 'rails_12factor', group: :production
 gem 'thin', group: :production
 
